@@ -7,10 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      padding: {
+        18: "72px",
+      },
+      colors: {
+        "hoobe-primary": "var(--hoobe-primary)",
+        "hoobe-dark": "var(--hoobe-primary-dark)",
+      },
+      spacing: {
+        calculated: "calc(62% - var(--container-padding))",
+      },
+      boxShadow: {
+        wrapper: "0 0.75rem 44px 0 rgba(78, 81, 82, 0.12)",
       },
     },
   },
